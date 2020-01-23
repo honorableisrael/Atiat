@@ -98,6 +98,10 @@ ul{
     z-index: 1;
     position: fixed;
 }
+.firstimage{
+    position: relative;
+    bottom: 42px;
+}
 .firstrow{
     padding-top: 4rem;
 }
