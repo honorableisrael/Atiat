@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poppins&display=swap');
+html{
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+    color: #444444;
+    margin: 0em;
+    padding: 0em;
+}
+.nav_logo{
+    padding: 1rem;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 3;
+ }
+.nav-group1{
+    display: flex;
+    /* border-left: .1px solid #aaa6a6;
+    border-right: .1px solid #aaa6a6; */
+}
+.customdropdown{
+    /* display: none; */
+    position: absolute;
+    z-index: 2;
+}
+li{
+    list-style: none;
+    padding: .5rem 1rem;
+    font-weight: 500;
+    color: #444444;
+    margin: 5px 15px;
+}
+li:hover{
+    color: rgba(0,103,54);
+    background-color: #f8f7f7;
+}
+ul{
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 30px;
+    background-color: white;
+    padding: 1rem;
+}
+
+.nav-group1:hover .nav_titles:hover ul{
+    display: block;
+}
+.nav_titles{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    cursor: pointer;
+}
+.nav_titles:hover{
+    color: rgba(0,103,54);
+}
+.nav-container{
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 30px;
+}
+.firstcontentwrapper{
+    margin-top: 6rem;
+    padding-left: 2rem;
+}
+.intoheader{
+    text-transform: capitalize;
+    font-size: 2.6em;
+    padding-top: 2rem;
+    font-weight: 400;
+    color: #434b43;
+}
+
+.subheader{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(15, 51, 33);
+}
+.firsttoplogo{
+    position: absolute;
+}
+.contactheader{
+    padding: 0px;
+}
+.contactheader:hover{
+    color: rgba(0,103,54);
+}
+.body-right{
+    /* background-image: url('./assets/how-it-works.png'); */
+    backface-visibility: unset;
+    z-index: 1;
+    position: fixed;
+}
+.firstrow{
+    padding-top: 4rem;
+}
+@media(min-width:777px){
+    .mobileview{
+        display: none;
+    }
+}
+@media(max-width:777px){
+    .mobileview{
+        display: block;
+    }
+    .fa-bars{
+        color: rgba(0,103,54);
+        padding-top: 1rem;
+        cursor: pointer;
+    }
+    .nav-group1{
+        display: none;
+    }
+    
+.sidebar{
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0;
+    background: linear-gradient(rgb(10, 29, 21),rgb(64, 133, 110),rgb(111, 143, 133));
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+}
