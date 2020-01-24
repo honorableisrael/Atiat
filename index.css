@@ -7,7 +7,7 @@ html{
     padding: 0em;
 }
 .nav_logo{
-    padding: .8rem 1rem 1rem 1rem;
+    padding: .8rem 5rem 1rem 1rem;
 }
 .nav-wrapper{
     color: #868786;
@@ -19,11 +19,13 @@ html{
     font-size: 15px;
     font-weight: 400;
     z-index: 3;
+    box-sizing: border-box;
+    border-bottom: .1px solid #dde4dd;
  }
 .nav-group1{
     display: flex;
-    /* border-left: .1px solid #aaa6a6;
-    border-right: .1px solid #aaa6a6; */
+    border-left: .1px solid #dde4dd;
+    /* border-right: .1px solid #dde4dd;  */
 }
 .customdropdown{
     /* display: none; */
@@ -45,7 +47,7 @@ li:hover{
     display: flex;
     padding-left: 1rem;
     padding-top: 5px;
-}
+}   
 ul{
     display: none;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 30px;
@@ -53,13 +55,37 @@ ul{
     padding: 1rem;
 }
 
-.nav-group1:hover .nav_titles:hover ul{
+.nav-group1:hover .nav_titles:hover ul {
     display: block;
+}
+.envelopearea:hover {
+    color: white;
+    padding: .2rem 0.7rem 0.3rem;
+    font-size:30px;
+    background: rgba(0,103,54);
+    transition: 1s ease-in-out ;
+}
+.envelopearea{
+    color:rgba(0,103,54);
+    padding: .2rem 0.7rem 0.3rem;
+    font-size:30px;
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+}
+.nav_title1{
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    position: relative;
+    left: 3rem;
+    border-left: .1px solid #dde4dd;
 }
 .nav_titles{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     cursor: pointer;
 }
 .nav_titles:hover{
@@ -97,12 +123,7 @@ ul{
 .firsttoplogo{
     position: absolute;
 }
-.contactheader{
-    padding: 0px;
-}
-.contactheader:hover{
-    color: rgba(0,103,54);
-}
+
 .body-right{
     /* background-image: url('./assets/how-it-works.png'); */
     backface-visibility: unset;
@@ -123,14 +144,16 @@ ul{
     font: 400 14px/1.1 "Helvetica Neue LT W05 45 Light",sans-serif;
     color: #868786;
     letter-spacing: 0;
+    /* position: relative;
+    left: 0rem; */
 }
 .fa-search{
     position: relative;
-    left: 10rem;
+    left: 8rem;
 }
 .navsearch:focus{
     outline: none;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
     -webkit-transition-duration: 0.4s;
