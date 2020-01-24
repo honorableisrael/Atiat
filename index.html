@@ -17,15 +17,15 @@
     <!-- nav bar starts here -->
     <section class="nav-container">
         <div class="nav-wrapper">
-        <div class="navitem"><a href="/">
+        <div class="navitem"><a href="/index.html">
             <img src="./assets/ATIAT-Site-Logo_Small.png" class="nav_logo animated fadeIn" alt="atiat_logo"/></a>
-        </div>
+            <!-- titles starts here -->
             <div class="nav-group1 animated fadeIn">
                 <div class="nav_titles">
                     Home
                 </div>
                 <div class="nav_titles about">
-                    About Us
+                    About Us  <i class="fa fa-sort-down"></i>
                     <ul class="customdropdown">
                         <li class="animated fadeInUp">
                             Board Of Directors
@@ -36,7 +36,7 @@
                     </ul>                    
                 </div>
                 <div class="nav_titles">
-                    Services
+                    Services  <i class="fa fa-sort-down"></i>
                     <ul class="customdropdown">
                         <li class="animated fadeInUp">
                            Finance Lease
@@ -58,10 +58,16 @@
                 <div class="nav_titles">
                     Client
                 </div>
+                <div class="nav_titles">
+                    <i class="fa fa-search"></i>
+                    <input type="text" name="search" class="navsearch" placeholder="Search..">
+                </div>
             </div>
+            <!-- title ends here -->
+        </div>
             <div class="nav-group1">
                 <div class="nav_titles" title="Contact">
-                    <i class="fa fa-envelope-o contactheader" style="font-size: 30px;"></i>
+                    <i class="fa fa-envelope-o contactheader" style="font-size:30px;"></i>
                 </div>
             </div>
             <div class="mobileview" onclick="toggleNav()">
@@ -72,7 +78,7 @@
     <div class="sidebar" id="mySidenav">
       </div>
     <!-- nav ends here -->
-    <section class="firstcontentwrapper">
+    <section class="firstcontentwrapper" onclick="closeNav()">
         <div class="container">
             <div class="row firstrow">
             <div class="col-md-6 col-sm-12 order-sm-1 order-12  body-intro">

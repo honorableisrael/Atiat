@@ -2,20 +2,22 @@
 html{
     scroll-behavior: smooth;
     font-family: 'Poppins';
-    color: #444444;
+    color: #868786;
     margin: 0em;
     padding: 0em;
 }
 .nav_logo{
-    padding: 1rem;
+    padding: .8rem 1rem 1rem 1rem;
 }
 .nav-wrapper{
+    color: #868786;
     display: flex;
     justify-content: space-between;
     padding-left: 3rem;
     padding-right: 3rem;
+    text-transform: uppercase;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     z-index: 3;
  }
 .nav-group1{
@@ -32,12 +34,17 @@ li{
     list-style: none;
     padding: .5rem 1rem;
     font-weight: 500;
-    color: #444444;
+    color: #868786;
     margin: 5px 15px;
 }
 li:hover{
     color: rgba(0,103,54);
     background-color: #f8f7f7;
+}
+.navitem{
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 5px;
 }
 ul{
     display: none;
@@ -52,7 +59,7 @@ ul{
 .nav_titles{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 4rem;
+    padding-left: 7rem;
     cursor: pointer;
 }
 .nav_titles:hover{
@@ -70,12 +77,16 @@ ul{
     margin-top: 6rem;
     padding-left: 2rem;
 }
+.fa-sort-down{
+    position: relative;
+    bottom: 3px;
+}
 .intoheader{
     text-transform: capitalize;
     font-size: 2.6em;
     padding-top: 2rem;
     font-weight: 400;
-    color: #434b43;
+    color: #868786;
 }
 
 .subheader{
@@ -104,6 +115,27 @@ ul{
 }
 .firstrow{
     padding-top: 4rem;
+}
+.navsearch{
+    border: 0px;
+    border-color: #868786;
+    padding: 4px 0;
+    font: 400 14px/1.1 "Helvetica Neue LT W05 45 Light",sans-serif;
+    color: #868786;
+    letter-spacing: 0;
+}
+.fa-search{
+    position: relative;
+    left: 10rem;
+}
+.navsearch:focus{
+    outline: none;
+    border-bottom: 1px solid;
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(.645,.045,.355,1);
 }
 @media(min-width:777px){
     .mobileview{
