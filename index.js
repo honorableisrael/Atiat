@@ -12,3 +12,9 @@
   }
 
 //   slider starts here
+function changeSliderTitle(){
+    let contentList = ['Car rental in Nigeria','strategic partnership','innovative financing','acquire with ease']
+    let elToBeChanged = document.querySelector('.car_rental')
+    elToBeChanged.value = 'strategic partnership'
+}
+changeSliderTitle()

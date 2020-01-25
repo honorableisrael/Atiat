@@ -80,8 +80,11 @@
       </div>
     <!-- nav ends here -->
     <div class="micronav">
-        <div><img src="./assets/greencar_icon.jpeg" class="carsvg img-responsive"/> Service Link</div>
-        <div class="micronav1"><img src="./assets/549px-Orange_sport_car.svg.png" class="carsvg img-responsive"/> Services Link</div>
+        <div onclick="carousel(0)"><img src="./assets/ATIAT-Equipment-Lease_thumnail.png" class="carsvg img-responsive"  onclick="carousel(0)"/> <span class="servcthum">Car Rental</span></div>
+        <div class="micronav1"  onclick="carousel(1)"><img src="./assets/greencar_icon.jpeg" class="carsvg img-responsive"  onclick="carousel(1)"/><span class="servcthum"> Finance Lease</span></div>
+        <div class="micronav1"  onclick="carousel(2)"><img src="./assets/Slider-Clients_thumb.png" class="carsvg img-responsive"  onclick="carousel(2)"/><span class="servcthum"> Partnership</span></div>
+        <div class="micronav1"  onclick="carousel(3)"><img src="./assets/chess-game-over-6_thumnail.png" class="carsvg img-responsive"  onclick="carousel(3)"/> <span class="servcthum"> Consultants</span></div>
+        <div class="micronav1"  onclick="carousel(4)"><img src="./assets/Slider-4_3_thumb.png" class="carsvg img-responsive"  onclick="carousel(4)"/><span class="servcthum"> Aquire with ease</span></div>
     </div>
     <section class="firstcontentwrapper" onclick="closeNav()">
         <div class="container-fliud">
@@ -90,14 +93,20 @@
                     <img class="mySlides w3-animate-top animated fadeInLeft" src="./assets/ATIAT-Equipment-Lease.jpg" style="width:fit-content">
                     <img class="mySlides w3-animate-bottom animated fadeInRight" src="./assets/ATIAT-Auto-Lease-Slide-2.jpg" style="width:fit-content">
                     <img class="mySlides w3-animate-top animated fadeInLeft" src="./assets/Slider-Clients.jpg" style="width:fit-content">
-                    <img class="mySlides w3-animate-bottom animated fadeInLeft" src="./assets/Slider-Clients.jpg" style="width:fit-content">
+                    <img class="mySlides w3-animate-bottom animated fadeInLeft" src="./assets/chess-game-over-6.jpg" style="width:fit-content">
+                    <img class="mySlides w3-animate-bottom animated fadeInLeft" src="./assets/Slider-4_3.jpg" style="width:fit-content">
                     <!-- <img class="mySlides w3-animate-bottom animated fadeInLeft" src="./assets/white-mercedes-benz-cars-120049.jpg" style="width:fit-content"> -->
                 </div>
             </div>
             <div class="arrow animated bounce"></div>
             <div class="row">
-                <div class="carrental  animated bounceIn">
-                    <span class="car_rental">Car rental in Nigeria</span>
+                <div class="carrental  animated zoomIn">
+                    <span class="car_rental animated bounceIn" >Car rental in Nigeria</span>
+                    <span class="car_rental animated bounceIn" >Innovative Financing</span>
+                    <span class="car_rental animated bounceIn" >Strategic Partnership</span>
+                    <span class="car_rental animated bounceIn" >Talented Consultants</span>
+                    <span class="car_rental animated bounceIn" >Acquire with ease</span>
+                    <!--Innovative Financing  -->
                     <div class="chooselocation">
                         <input type="text" class="location" placeholder="Choose location and dates of the rental"/>
                     </div>
@@ -109,20 +118,23 @@
     
 </body>
 <script>
-    var myIndex = 0;
     carousel();
-    
-    function carousel() {
+    function carousel(val=0) {
+    var myIndex = val;
       var i;
       var x = document.getElementsByClassName("mySlides");
+      var y = document.getElementsByClassName("car_rental");
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";  
+        y[i].style.display = "none";  
       }
       myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
+      if (myIndex > x.length) { myIndex = 1 }    
       x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 2500);    
+      y[myIndex-1].style.display = "block";  
+      setTimeout( carousel(val) , 5000 ); 
     }
+
     </script>
 <script src="index.js" type="application/javascript"></script>
 <!-- jQuery library -->
