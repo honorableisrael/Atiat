@@ -170,6 +170,20 @@
 </section>
 </body>
 <script>
+    //maps search starts here
+    var map;
+    const searchForPlaces = async()=>{
+        var google = window.google
+        console.log(google)
+        var search_input = document.getElementById('search_input')
+        map = await new google.maps.places.Autocomplete((search_input),{
+            types:['geocode']
+        })
+        console.log(window)
+    }
+    searchForPlaces()
+</script>
+<script>
     //carousel starts here
      var myIndex = 0
      carousel();
@@ -197,20 +211,9 @@
     setTimeout(carousel,time);
     }
     //carousel ends here
-
-    //maps search starts here
-    function searchForPlace (){
-        var search_input = document.getElementById('search_input')
-        var autocomplete;
-        autocomplete = new google.maps.places.Autocomplete((search_input),{
-            types:['geocode']
-        })
-        console.log(autocomplete)
-    }
-    sea
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCowEZp26fgK6XiFKifD25YzNaJCbxcunk"
+async defer></script>
 <script src="index.js" type="application/javascript"></script>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
