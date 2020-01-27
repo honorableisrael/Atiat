@@ -108,7 +108,7 @@
                     <span class="car_rental animated bounceIn" >Acquire with ease</span>
                     <!--Innovative Financing  -->
                     <div class="chooselocation">
-                        <input type="text" class="location" placeholder="Choose location and dates of the rental"/>
+                        <input type="text" class="location" id="search_input" placeholder="Choose location and dates of the rental"/>
                     </div>
                     <input type="submit" class="submitlocation">
                 </div>
@@ -170,6 +170,7 @@
 </section>
 </body>
 <script>
+    //carousel starts here
      var myIndex = 0
      carousel();
     function carousel(val,time=6500){
@@ -195,6 +196,20 @@
     y[myIndex-1].style.display = "block";  
     setTimeout(carousel,time);
     }
+    //carousel ends here
+
+    //maps search starts here
+    function searchForPlace (){
+        var search_input = document.getElementById('search_input')
+        var autocomplete;
+        autocomplete = new google.maps.places.Autocomplete((search_input),{
+            types:['geocode']
+        })
+        console.log(autocomplete)
+    }
+    sea
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
 </script>
 <script src="index.js" type="application/javascript"></script>
 <!-- jQuery library -->
