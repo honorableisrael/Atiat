@@ -54,7 +54,7 @@
                         <li class="animated fadeInUp">
                             Driver Outsourcing
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="nav_titles">
                     Client
@@ -81,16 +81,16 @@
     <!-- nav ends here -->
     <div class="micronav">
         <div onclick="carousel(0)"><img src="./assets/greencar_icon.jpeg" class="carsvg img-responsive"  onclick="carousel(0)"/> <span class="servcthum">Car Rental</span></div>
-        <div class="micronav1"  onclick="carousel(1)"><img src="./assets/ATIAT-Equipment-Lease_thumnail.png" class="carsvg img-responsive"  onclick="carousel(1)"/><span class="servcthum"> Finance Lease</span></div>
-        <div class="micronav1"  onclick="carousel(2)"><img src="./assets/Slider-Clients_thumb.png" class="carsvg img-responsive"  onclick="carousel(2)"/><span class="servcthum"> Partnership</span></div>
+        <!-- <div class="micronav1"  onclick="carousel(1)"><img src="./assets/ATIAT-Equipment-Lease_thumnail.png" class="carsvg img-responsive"  onclick="carousel(1)"/><span class="servcthum"> Finance Lease</span></div>
+        <div class="micronav1"  onclick="carousel(2)"><img src="./assets/Slider-Clients_thumb.png" class="carsvg img-responsive"  onclick="carousel(2)"/><span class="servcthum"> Partnership</span></div> -->
         <div class="micronav1"  onclick="carousel(3)"><img src="./assets/chess-game-over-6_thumnail.png" class="carsvg img-responsive"  onclick="carousel(3)"/> <span class="servcthum"> Consultants</span></div>
-        <div class="micronav1"  onclick="carousel(4)"><img src="./assets/Slider-4_3_thumb.png" class="carsvg img-responsive"  onclick="carousel(4)"/><span class="servcthum"> Aquire with ease</span></div>
+        <!-- <div class="micronav1"  onclick="carousel(4)"><img src="./assets/Slider-4_3_thumb.png" class="carsvg img-responsive"  onclick="carousel(4)"/><span class="servcthum"> Aquire with ease</span></div> -->
     </div>
     <section class="firstcontentwrapper" onclick="closeNav()">
         <div class="container-fliud">
             <div class="row firstrow">
                 <div class="col-md-12 col-lg-12" style="padding-right: 0px;">
-                    <img class="mySlides w3-animate-top animated fadeInLeft" src="./assets/ATIAT-Auto-Lease-Slide-2.jpg" style="width:fit-content">
+                    <img class="mySlides w3-animate-top animated fadeInLeft" src="./assets/white-mercedes-benz-cars-120049.jpg" style="width:fit-content">
                     <img class="mySlides w3-animate-bottom animated fadeInRight" src="./assets/ATIAT-Equipment-Lease.jpg" style="width:fit-content">
                     <img class="mySlides w3-animate-top animated fadeInLeft" src="./assets/Slider-Clients.jpg" style="width:fit-content">
                     <img class="mySlides w3-animate-bottom animated fadeInLeft" src="./assets/chess-game-over-6.jpg" style="width:fit-content">
@@ -101,30 +101,39 @@
             <a href="#testimonials"><div class="arrow animated bounce"></div></a>
             <div class="row">
                 <div class="carrental  animated zoomIn">
-                    <span class="car_rental animated bounceIn" >Car rental in Nigeria</span>
-                    <span class="car_rental animated bounceIn" >Innovative Financing</span>
+                    <div class="car_rental">
+                    <span class="car_rental1 animated bounceIn" >Car rental in Nigeria</span>
+                        <div class="chooselocation">
+                            <input type="text" class="location" id="myInput" onclick="displayLocations()" placeholder="Choose location of the rental"/>
+                        </div>
+                        <!-- <div class="wrapperlocation">
+                            <div>Lagos</div>
+                            <div>Abuja</div>
+                            <div>Kwara</div>
+                            <div>Ondo</div>
+                            <div>Ogun</div>
+                        </div> -->
+                    </div>
+                    <span class="car_rental animated bounceIn">Innovative Financing</span>
                     <span class="car_rental animated bounceIn" >Strategic Partnership</span>
                     <span class="car_rental animated bounceIn" >Talented Consultants</span>
                     <span class="car_rental animated bounceIn" >Acquire with ease</span>
                     <!--Innovative Financing  -->
-                    <div class="chooselocation">
-                        <input type="text" class="location" id="search_input" placeholder="Choose location and dates of the rental"/>
-                    </div>
-                    <input type="submit" class="submitlocation">
+                    <!-- <input type="submit" class="submitlocation"> -->
                 </div>
             </div>
         </div>
     </section>
-    <section class="testimonialwrapper">
+    <!-- <section class="testimonialwrapper">
     <div class="show-on-scroll">
         <h3><strong>Testimonial</strong></h3>
         <div class="seprator"></div>
     </div>
     <section class="row" id="testimonials">
         <div class="col-sm-6">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> -->
                   <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
+                  <!-- <div class="carousel-inner">
                     <div class="item active">
                       <div class="row" style="padding: 20px">
                         <button style="border: none;"><i class="fa fa-quote-left testimonial_fa" aria-hidden="true"></i></button>
@@ -167,27 +176,14 @@
             </div>
         </div>
     </section>
-</section>
+</section> -->
 </body>
-<script>
-    //maps search starts here
-    var map;
-    const searchForPlaces = async()=>{
-        var google = window.google
-        console.log(google)
-        var search_input = document.getElementById('search_input')
-        map = await new google.maps.places.Autocomplete((search_input),{
-            types:['geocode']
-        })
-        console.log(window)
-    }
-    searchForPlaces()
-</script>
+
 <script>
     //carousel starts here
      var myIndex = 0
      carousel();
-    function carousel(val,time=6500){
+    function carousel(val,time=9500){
     var i;
     var x = document.getElementsByClassName("mySlides"); //for slideimages
     var y = document.getElementsByClassName("car_rental");//for slide text content
@@ -212,9 +208,16 @@
     }
     //carousel ends here
 </script>
+<script>
+ const displayLocations =()=>{
+    const el = document.getElementsByClassName('wrapperlocation');
+    el.style.visibility = 'visible';
+}
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCowEZp26fgK6XiFKifD25YzNaJCbxcunk"
 async defer></script>
 <script src="index.js" type="application/javascript"></script>
+<script src="autocomplete.js" type="application/javascript"></script>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Popper JS -->
