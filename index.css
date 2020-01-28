@@ -86,7 +86,7 @@ ul{
     color: rgba(0,103,54);
     background: white;
     border: 1px solid rgb(64, 133, 110);
-    top: 5rem;
+    top: 1rem;
 }
 .submitlocation{
     outline: none;
@@ -449,7 +449,7 @@ ul{
   .autocomplete-items div {
     padding: 1px;
     display: inline-table;
-    width: 35%;
+    width: 80%;
     cursor: pointer;
     background-color: rgba(255, 254, 254, 0.6); 
     border-bottom: 1px solid #d4d4d4; 
