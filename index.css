@@ -699,3 +699,44 @@ ul{
 .xc{
     margin-top: 2rem;
 }
+
+.firstdivwrapper{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 5rem;
+    background-repeat: no-repeat;
+    background: url('./assets/board-zb.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bodtilte{
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    padding: 1rem 6rem;
+}
+.bodcontent{
+    font-size: 17px;
+    line-height: 22px;
+    width: 60%;
+    color: #ffffff;
+    word-spacing: 2;
+    padding: 0rem 6rem;
+    font-weight: 200!important;
+}
+.firsbod1{
+    color: #868786;
+    margin: auto;
+}
+.moreaboutbod{
+    text-align: justify;
+}
+.chairman{
+    margin: auto;
+}
+.c11{
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+}
