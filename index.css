@@ -66,12 +66,12 @@ ul{
     color: white;
     padding: 1px 0.3rem 1px;
     font-size:30px;
-    background: rgba(0,103,54);
+    background: rgb(248, 136, 36,.8);
     transition: 1s ease-in-out ;
 }
 .envelopearea{
     margin: 0px;
-    color:rgba(0,103,54);
+    color:rgb(248, 136, 36,.8);
     padding: .1px 0.3rem 1px;
     font-size:30px;
     transition: 1s ease-in-out ;
@@ -152,7 +152,10 @@ ul{
 }
 .mySlides {
     display:none;
-    max-width: 100%;max-height: 100%;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1365px;
     background: rgba(0, 0, 0, 0.512);
 }
 .subheader{
@@ -500,3 +503,135 @@ ul{
   .fa-map-marker{
       color: #373d4b;
   }
+  .aboutustitle{
+    font-size: 15px;
+    text-align: left;
+    opacity: .9;
+    padding: 8rem 0px 40px;
+    text-transform: uppercase;
+    font-size: 3.55em;
+    font-weight: 200;
+    margin-left: 7rem;
+    color: #868786;
+    line-height: 30px;
+  }
+  .imagecompany{
+      padding-bottom: 4rem;
+  }
+  .foundyear{
+    font-size: 2.77em;
+    color: #868786;
+    font-weight: 300;
+  }
+  .foundyear3{
+    text-align: center;
+    font-size: 2.77em;
+    color: #868786;
+    font-weight: 300;
+  }
+  .foundyear1{
+    font-size: 1.77em;
+    font-weight: 300;
+    color: rgb(248, 136, 36);
+    line-height: 1;
+  }
+  .firstrowabout{
+    margin-left: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+  .aboutrw1{
+      margin-left: 6rem;
+  }
+  .firsttextabout{
+    color: #868786;
+    word-spacing: 3px;
+    text-align: justify;
+  }
+  .ft{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 0px;
+  }
+  .foundyear2{
+    font-size: 1em;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: rgb(248, 136, 36);
+    line-height: 1;
+  }
+  .valueswrapper{
+      background: white;
+      margin: auto;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-bottom: 2rem;
+      box-sizing: border-box;
+      position: relative;
+      top: 10rem;
+  }
+  .ourvalueswrapper{
+      background-image: url('./assets/ourvalues.jpg');
+      background-position: fixed;
+      background-repeat: no-repeat;
+
+  }
+  .valuetext{
+    padding:1rem 1rem;
+    word-spacing: 3px;
+    text-align: justify;
+    color: #868786;
+  }
+  .foundyear4{
+    font-size: 2.4em;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:#868786;
+    line-height: 1;
+  }
+  .foundyear5{
+    font-size: 2.4em;
+    font-weight: 300;
+    color: rgb(248, 136, 36);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .text-header-ab{
+    /* margin-top: 3em; */
+    font: 300 2em/1.11;
+    line-height: 1.2;
+    color: #868786;
+    font-size: 1.0em;
+    text-transform: capitalize
+  }
+  .OUR_IMPACT{
+    position: relative;
+    top: 18rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-left: 240px;
+  }
+  .first-text{
+    margin: 1.5em 0;
+    color: rgb(134, 135, 134);
+  }
+  .secondsce{
+      position: relative;
+      background-color: white;
+      top: 10rem;
+      left: 3rem;
+      margin-left: 8rem;
+      margin-top: 2rem;
+  }
+.standaloneimage{
+    bottom: 1px;
+    position: relative;
+    right: -56rem;
+    top: -15rem;
+}
+@media(max-width:799px){
+    .standaloneimage{
+        display: none;
+    }
+}
