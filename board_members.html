@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- custom stylesheet -->
-    <link href="index.css" rel="stylesheet" />
     <!-- animate css module -->
     <link href="animate.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
@@ -14,25 +12,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./product.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+   <!-- custom stylesheet -->
+   <link href="index.css" rel="stylesheet" />
     <title>ATIAT- Board Members</title>
 </head>
 <body>
     <!-- nav bar starts here -->
     <section class="nav-container">
         <div class="nav-wrapper">
-        <div class="navitem"><a href="">
+        <div class="navitem"><a href="index.html" class="link">
             <img src="./assets/ATIAT-Site-Logo_Small.png" class="nav_logo animated fadeIn" alt="atiat_logo"/></a>
             <!-- titles starts here -->
             <div class="nav-group1 animated fadeIn">
-                <div class="nav_titles">
-                    Home
-                </div>
-                <div class="nav_titles about animated">
-                   Company<i class="fa fa-angle-down arrowdown"></i>
+                <a href="index.html">
+                    <div class="nav_titles">
+                        Home
+                    </div>
+                </a>
+                <div class="nav_titles about">
+                    <a href="About_us.html" class="link">
+                    Company<i class="fa fa-angle-down arrowdown"></i>
+                    </a>
                     <ul class="customdropdown">
-                        <li class="animated fadeInUp">
-                            Board Of Directors
-                        </li>
+                        <a href="board_members.html">
+                            <li class="animated fadeInUp">
+                                Board Of Directors
+                            </li>
+                        </a>
                         <li class="animated fadeInUp">
                             Management Team
                         </li>
@@ -56,7 +62,7 @@
                         <li class="animated fadeInUp">
                             Driver Outsourcing
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="nav_titles">
                     Client
@@ -68,9 +74,11 @@
         </div>
             <div class="nav-group1">
                 <div class="nav_title1" title="Contact">
-                    <div class="envelopearea">
-                        <i class="fa fa-envelope-o contactheader" style="font-size:30px;"></i>
-                    </div>
+                    <a href="contact.html">
+                        <div class="envelopearea">
+                            <i class="fa fa-envelope-o contactheader" style="font-size:30px;"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="mobileview" onclick="toggleNav()">
@@ -85,7 +93,7 @@
         <div class="row">
             <div class="firstdivwrapper">
                 <div class="bodtilte">The Board of Directors</div>
-                <div class="bodcontent">Our Board of Directors who are shareholders and active participants in the Atait planning have provided strength, stability and a vision to help us lead our customers where they want to go.</div>
+                <div class="bodcontent">The Board of Directors who are shareholders and active participants in the Atait planning have provided strength, stability and a vision to help us lead our customers where they want to go.</div>
             </div>
         </div>
         <div class="row  c11">
@@ -107,7 +115,7 @@
                     </div>
                 </div>
         </div>
-        <div class="row c11">
+        <div class="row c11 crowcolor">
             <div class="col-md-4" style="padding-left: 6rem;">
                 <div>
                     <img src="./assets/Kanayo-Eni-Ikeh_md.jpg" class="chairman" alt="md" />
@@ -155,7 +163,7 @@
             </div>
         </div>
     </div>
-    <div class="row c11">
+    <div class="row c11 crowcolor">
         <div class="col-md-4" style="padding-left: 6rem;">
             <div>
                 <img src="./assets/Victor-Fagbamila_direc.jpg" class="chairman" alt="md" />
@@ -197,27 +205,28 @@
                 </div>
             </div>
         </div>
-        <div class="row  c11">
-            <div class="firsbod1 col-md-8 " style="padding-left: 6rem;padding-top: 2rem;">
-                <h5 class="titleofbod"> 
-                    DIRECTOR
-                </h5>
-                <h2 class="nameofbod"> 
-                    Oladipupo Adeoye
-                </h2>
-                <div class="moreaboutbod">
-                    Oladipupo Adeoye is an astute, well-rounded finance professional, with over a decade experience in financial services sector which span across fixed income trading, treasury management, investment banking and private equity investing. Dipo has been involved in a broad spectrum of investment and banking responsibilities, including mergers and acquisitions, securities trading, treasury management, project management, business turnaround and strategic planning.
-
-                    Oladipupo started his banking career at Access Bank Plc where he bagged the award for the best graduating student from the Access Bank School of Banking Excellence. He worked in Banking Operations, Customer Services and later moved to Treasury where he rose to become the Head, Fixed Income Trading Unit of the Bank.
-                    
-                    In 2011, Dipo joined Heirs Holdings, an African proprietary investment company, where he handled primarily fixed income trading and private equity investment. During his stay at Heirs, He was involved in a range of private equity investments across Africa in a range of selected sectors including financial services, oil and gas, agriculture, healthcare, real estate and hospitality. He also handled the impact investing portfolio of the Tony Elumelu Foundation through which capital was invested in businesses to enhance financial and social returns.
-                    
-                    He later joined the United Bank for Africa Plc, a Pan-African Bank, as a Manager in charge of fixed income trading with primary focus on bond trading and fixed income related structures before joining VFD Group Plc as the Treasurer in 2018.  </div>
-            </div>
-            <div class="col-md-4">
+        <div class="row c11 crowcolor">
+            <div class="col-md-4" style="padding-left: 6rem;">
                 <div>
                     <img src="./assets/Dipo-Adeoye.jpg" class="chairman" alt="chairman" />
                 </div>
+            </div>
+        <div class="firsbod1 col-md-6 ">
+            <h5 class="titleofbod"> 
+                DIRECTOR
+            </h5>
+            <h2 class="nameofbod"> 
+                Oladipupo Adeoye
+            </h2>
+            <div class="moreaboutbod">
+                Oladipupo Adeoye is an astute, well-rounded finance professional, with over a decade experience in financial services sector which span across fixed income trading, treasury management, investment banking and private equity investing. Dipo has been involved in a broad spectrum of investment and banking responsibilities, including mergers and acquisitions, securities trading, treasury management, project management, business turnaround and strategic planning.
+
+                Oladipupo started his banking career at Access Bank Plc where he bagged the award for the best graduating student from the Access Bank School of Banking Excellence. He worked in Banking Operations, Customer Services and later moved to Treasury where he rose to become the Head, Fixed Income Trading Unit of the Bank.
+                
+                In 2011, Dipo joined Heirs Holdings, an African proprietary investment company, where he handled primarily fixed income trading and private equity investment. During his stay at Heirs, He was involved in a range of private equity investments across Africa in a range of selected sectors including financial services, oil and gas, agriculture, healthcare, real estate and hospitality. He also handled the impact investing portfolio of the Tony Elumelu Foundation through which capital was invested in businesses to enhance financial and social returns.
+                
+                He later joined the United Bank for Africa Plc, a Pan-African Bank, as a Manager in charge of fixed income trading with primary focus on bond trading and fixed income related structures before joining VFD Group Plc as the Treasurer in 2018.  </div>
+            </div>
             </div>
         </div>
     </div>

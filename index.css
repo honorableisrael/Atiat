@@ -108,6 +108,7 @@ ul{
 }
 .nav_titles:hover{
     color: rgba(0,103,54);
+    text-decoration: none;
 }
 .nav-container{
     position: fixed;
@@ -503,6 +504,19 @@ ul{
   .fa-map-marker{
       color: #373d4b;
   }
+  a .nav_titles{
+      color: #868786;
+      text-decoration: none;
+  }
+  a:active div{
+      color: #868786;
+      text-decoration: none;
+  }
+  a:hover div .nav_titles{
+    color: rgba(0,103,54);
+    text-decoration: none;
+  }
+
   .aboutustitle{
     text-align: left;
     opacity: .7;
@@ -740,3 +754,21 @@ ul{
     margin-bottom: 6rem;
     margin-top: 1rem;
 }
+.crowcolor{
+    background-color: #fffdfd;
+    padding: 40px 0rem;
+}
+a {
+    color: #868786;
+    text-decoration: none;
+  }
+.nav_titles a:active{
+    color: rgba(0,103,54);
+} 
+a:active{
+    color: none;
+}
+a:hover{
+    color: rgba(0,103,54);
+    text-decoration: none;
+} 

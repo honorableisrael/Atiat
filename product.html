@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- custom stylesheet -->
-    <link href="index.css" rel="stylesheet" />
     <!-- animate css module -->
     <link href="animate.css" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
@@ -14,25 +12,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./product.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <!-- custom stylesheet -->
+    <link href="index.css" rel="stylesheet" />
+    
     <title>ATIAT- product page</title>
 </head>
 <body>
     <!-- nav bar starts here -->
     <section class="nav-container">
         <div class="nav-wrapper">
-        <div class="navitem"><a href="">
+        <div class="navitem"><a href="index.html" class="link">
             <img src="./assets/ATIAT-Site-Logo_Small.png" class="nav_logo animated fadeIn" alt="atiat_logo"/></a>
             <!-- titles starts here -->
             <div class="nav-group1 animated fadeIn">
-                <div class="nav_titles">
-                    Home
-                </div>
+                <a href="index.html">
+                    <div class="nav_titles">
+                        Home
+                    </div>
+                </a>
                 <div class="nav_titles about">
+                    <a href="About_us.html" class="link">
                     Company<i class="fa fa-angle-down arrowdown"></i>
+                    </a>
                     <ul class="customdropdown">
-                        <li class="animated fadeInUp">
-                            Board Of Directors
-                        </li>
+                        <a href="board_members.html">
+                            <li class="animated fadeInUp">
+                                Board Of Directors
+                            </li>
+                        </a>
                         <li class="animated fadeInUp">
                             Management Team
                         </li>
@@ -56,7 +63,7 @@
                         <li class="animated fadeInUp">
                             Driver Outsourcing
                         </li>
-                    </ul>  
+                    </ul>
                 </div>
                 <div class="nav_titles">
                     Client
@@ -68,9 +75,11 @@
         </div>
             <div class="nav-group1">
                 <div class="nav_title1" title="Contact">
-                    <div class="envelopearea">
-                        <i class="fa fa-envelope-o contactheader" style="font-size:30px;"></i>
-                    </div>
+                    <a href="contact.html">
+                        <div class="envelopearea">
+                            <i class="fa fa-envelope-o contactheader" style="font-size:30px;"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="mobileview" onclick="toggleNav()">
