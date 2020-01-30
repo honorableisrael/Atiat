@@ -545,6 +545,7 @@ ul{
   }
   .firsttextabout{
     color: #868786;
+    line-height: 1px;
     word-spacing: 3px;
     text-align: justify;
   }
