@@ -127,11 +127,11 @@ ul{
 }
 .carrental{
         position: absolute;
-        right: 31%;
+        /* right: 31%; */
         font-size: 2.7em;
         font-weight: 300;
         border-radius: 1rem;
-        background: rgba(255, 254, 254, 0.6);
+        /* background: rgba(255, 254, 254, 0.6); */
         color: #9a9e9a;
         top: 48%;
         text-align: center;
@@ -324,7 +324,7 @@ ul{
 .car_rental{
     color: rgba(0,103,54);
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.096);
+    /* background-color: rgba(255, 255, 255, 0.096); */
     padding: 0px 4px 0px;
 }
 .micronav{
