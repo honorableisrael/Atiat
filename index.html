@@ -140,7 +140,7 @@
                 </div>
                 <div class="item1">Choose location for the rental
                 </div>
-                <div class="item2">Search
+                <div class="item2">Search <i class="fa fa-search"></i>
                 </div>
             </div>
         </div>
@@ -157,9 +157,122 @@
             <img src="./assets/movil-amarok (2).png" class="car3" alt="cars">
         </div>
    </div>
+   <!-- footersection -->
+   <footer class="footersection">
+    <div class="row">
+        <div class="col-md-6 shiftfooter">
+            <div class="first_wrapper">
+                <div class="wp1170">
+                    <div class="box1">
+                        <div class="foottitle1">OMEGA</div>
+                        <div class="bottomLink">
+                            <div>
+                                About Us
+                            </div>
+                            <div>
+                                Terms and Conditions   
+                            </div>
+                            <div>
+                                Insurance
+                            </div>
+                            <div>
+                                Legal disclaimer
+                            </div>
+                            <div>
+                                HR
+                            </div>
+                            <div>
+                                Corporate Services
+                            </div>
+                            <div>
+                                Personal Services
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wp1170">
+                    <div class="box1">
+                        <div class="foottitle1">FLEET</div>
+                        <div class="bottomLink">
+                            <div>
+                                Standard
+                            </div>
+                            <div>
+                                Standard Plus   
+                            </div>
+                            <div>
+                                Sedan Classic
+                            </div>
+                            <div>
+                                Sedan Full
+                            </div>
+                            <div>
+                                Sedan Full Automatic
+                            </div>
+                            <div>
+                                Family
+                            </div>
+                            <div>
+                                Green Concept
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wp1170 wpsds ">
+                    <div class="box1">
+                        <div class="foottitle1">LOCATION</div>
+                        <div class="bottomLink">
+                            7B Kafayat Abdulrasaq Street, Lekki, Lagos, Nigeria
+                        <div>+234 1 4539086,</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wp1170 wpsds">
+                    <div class="box1">
+                        <div class="foottitle1">FRANCHISING</div>
+                        <div class="bottomLink">
+                            The Omega Franchise
+                            Benefits of a Franchise
+                            Contact Form
+                        <div>+234 1 4539086,</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="col-md-6 shiftfooter">
+        <div class="first_wrapper">
+            <div class="wp1170">
+                <div class="box2">
+                    CALL +234 1 4539086 / +234 1 4539087
+                </div>
+                <div class="box3">
+                    HEADQUARTERS: 7B Kafayat Abdulrasaq Street, Lekki, Lagos, Nigeria
+                </div>
+                <!-- <a href="#" target="_blank" class="share in"><i class="fa fa-youtube"></i></a>
+                <a href="#" target="_blank" class="share ig"><i class="fa fa-skype"></i></a>
+                <a href="#" target="_blank" class="share tw"><i class="fa fa-linkedin"></i></a>
+                <a href="#" target="_blank" class="share yt"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank" class="share fb"><i class="fa fa-facebook"></i></a> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footMid">
+        ©Copyright <span id="dateOfService"></span> ATIAT Leasing Limited.
+    </div>
+    <div class="footLast">
+    </div>
+   </footer>
 </body>
 
 <script>
+    const returnDate = () =>{
+        var ataitDate = document.getElementById('dateOfService');
+        let newDate = new Date()
+         ataitDate.innerHTML = newDate.getFullYear();
+    }
+    returnDate()
     //carousel starts here
      var myIndex = 0
      carousel();
