@@ -18,3 +18,4 @@ function changeSliderTitle(){
     elToBeChanged.value = 'strategic partnership'
 }
 changeSliderTitle()
+

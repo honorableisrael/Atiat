@@ -882,6 +882,7 @@ a:hover{
     border: 1px solid white;
     border-radius: 1rem;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
     color: #fff;
@@ -1044,4 +1045,21 @@ a:hover{
   
   .select-items div:hover, .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+  .ovwrapper{
+      padding-top: 12rem;
+      margin: auto;
+      padding-bottom: 3rem;
+  }
+  .ourvalues_content{
+      
+  }
+  .ourvalues_title1{
+    margin-top: 3em;
+    color: #868786;
+    font: 300 2em/1.11 "Helvetica Neue LT W05 25 Ult Lt",sans-serif;
+    text-transform: uppercase;
+  }
+  .ourvalues_content{
+    color: #868786;
   }
