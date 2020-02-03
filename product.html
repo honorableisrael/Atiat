@@ -203,6 +203,14 @@
     </div>
 </body>
 <script>
+     // function for footer date
+   const returnDate = () =>{
+        var ataitDate = document.getElementById('dateOfService');
+        let newDate = new Date()
+         ataitDate.innerHTML = newDate.getFullYear();
+    }
+    returnDate()
+    //function ends here
     var slideIndex = 1;
     showDivs(slideIndex);
 

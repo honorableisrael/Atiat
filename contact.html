@@ -139,6 +139,14 @@
         <!-- <div class="col-md-7"><img src="./assets/contact_header.svg"  alt="contactus"/></div> -->
 </body>
 <script>
+     // function for footer date
+   const returnDate = () =>{
+        var ataitDate = document.getElementById('dateOfService');
+        let newDate = new Date()
+         ataitDate.innerHTML = newDate.getFullYear();
+    }
+    returnDate()
+    //function ends here
     var slideIndex = 1;
     showDivs(slideIndex);
 
